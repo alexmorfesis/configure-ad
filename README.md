@@ -52,19 +52,22 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-<img src="https://i.imgur.com/dMIuL2z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dMIuL2z.png" height="80%" width="80%" alt="Static IP Address"/>
 </p>
 
 <h3>Step 2: Ensure Connectivity</h3>
   <ol>
     <li>Access the Client-1 VM through a Remote Desktop connection.</li>
     <li>Verify network connectivity by initiating a ping operation from Client-1 to DC-1's private IP address. To achieve this, open a command-line interface, such as Command Prompt, and execute the command: `ping -t [private IP of DC-1]`. Initially, this command is expected to result in timeouts.</li>
-    <li>Enable ICMPv4 within the Windows Firewall settings on DC-1. This action is essential to facilitate successful pinging between Client-1 and DC-1.</li>
+    <li>Enable ICMPv4 Echo Request within the Windows Firewall settings on DC-1. (See pic below for details.) This action is essential to facilitate successful pinging between Client-1 and DC-1. Note the change in ping status.</li>
   </ol>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/56JN23R.png" height="80%" width="80%" alt="Enable ICMPv4 Echo Request"/>
+</p>
+<p>
+<img src="https://i.imgur.com/JmWVcud.png" height="80%" width="80%" alt="Successful Ping"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
