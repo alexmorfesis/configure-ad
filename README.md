@@ -87,13 +87,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Step 4: Create User Accounts</h3>
 <ol>
-  <li>Via the Remote Desktop on DC-1, use Active Directory Users and Computers (ADUC) to create an OU called "_EMPLOYEES."</li>
-  <li>Create an OU named "_ADMINS" and add "Jane Doe" as "jane_admin" with membership in the "Domain Admins" Security Group.</li>
-  <li>Log in as "mydomain.com\jane_admin" for administrative tasks. This login can be used on DC-1 and client-1 Virtual Machines.</li>
+  <li>Via Remote Desktop on DC-1, open Active Directory Users and Computers (ADUC) to create an Organizational Unit (OU) named "_EMPLOYEES." This OU will be used to organize user accounts.</li>
+  <li>Inside the "_ADMINS" OU, create a user account for "Jane Doe" with the username "jane_admin." Additionally, grant "jane_admin" membership in the "Domain Admins" Security Group. (Right click to add user to Groups.) This membership provides administrative privileges within the Active Directory domain.</li>
+  <li>To perform administrative tasks, log in as "mydomain.com\jane_admin." This login can be used on both the DC-1 and Client-1 Virtual Machines, granting administrative access to manage the Active Directory environment and perform other administrative duties.</li>
 </ol>
 </br>
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/tb9DVMM.png" height="80%" width="80%" alt="create new organizational unit"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DDifdmi.png" height="80%" width="80%" alt="create new user"/>
 </p>
 
 <h3>Step 5: Join Client-1 to the Domain</h3>
