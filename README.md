@@ -24,10 +24,38 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+Deploying an on-premises Active Directory within Azure Compute can be a complex process, but I'll break it down into simplified steps to give you a high-level overview. Keep in mind that specific details and configurations can vary depending on your organization's requirements. Here are the steps:
+
+- Step 1: Azure Resources Setup:
+Set up Azure resources, including a Virtual Network (VNet).
+
+- Step 2: Create Virtual Machines:
+Create a Windows Server 2022 VM named "DC-1" for the domain controller.
+Create a Windows 10 VM named "Client-1."
+
+-Step 3: Ensure Connectivity:
+Verify that DC-1 and Client-1 are in the same VNet.
+Establish network connectivity between them.
+
+-Step 4: Install Active Directory:
+Install Active Directory Domain Services on DC-1.
+Promote DC-1 as a domain controller.
+
+-Step 5: Create User Accounts:
+Create administrative and normal user accounts within Active Directory.
+
+-Step 6: Join Client-1 to the Domain:
+Configure Client-1 to use DC-1 as its DNS server.
+Join Client-1 to the domain.
+
+-Step 7: Setup Remote Desktop Access:
+Configure Remote Desktop settings on Client-1.
+Allow domain users access to Remote Desktop.
+
+-Step 8: Create Additional Users:
+Use PowerShell on DC-1 to create multiple user accounts.
+Observe the newly created accounts in Active Directory.
+Test logging in with one of the newly created accounts on Client-1.
 
 <h2>Deployment and Configuration Steps</h2>
 
