@@ -30,27 +30,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <li>Step 1: Azure Resources Setup: Set up Azure resources, including a Virtual Network (VNet).</li>
   <li>Step 2: Create Virtual Machines: Create a Windows Server 2022 VM named "DC-1" for the domain controller. Create a Windows 10 VM named "Client-1".</li>
   <li>Step 3: Ensure Connectivity: Verify that DC-1 and Client-1 are in the same VNet. Establish network connectivity between them.</li>
+  <li>Step 4: Install Active Directory: Install Active Directory Domain Services on DC-1. Promote DC-1 as a domain controller.</li>
+  <li>Step 5: Create User Accounts: Create administrative and normal user accounts within Active Directory.</li>
+  <li>Step 6: Join Client-1 to the Domain: Configure Client-1 to use DC-1 as its DNS server. Join Client-1 to the domain.</li>
+  <li>Step 7: Setup Remote Desktop Access: Configure Remote Desktop settings on Client-1. Allow domain users access to Remote Desktop.</li>
+  <li>Step 8: Create Additional Users: Use PowerShell on DC-1 to create multiple user accounts. Observe the newly created accounts in Active Directory. Test logging in with one of the newly created accounts on Client-1.</li>
 </ul> 
-
--Step 4: Install Active Directory:
-Install Active Directory Domain Services on DC-1.
-Promote DC-1 as a domain controller.
-
--Step 5: Create User Accounts:
-Create administrative and normal user accounts within Active Directory.
-
--Step 6: Join Client-1 to the Domain:
-Configure Client-1 to use DC-1 as its DNS server.
-Join Client-1 to the domain.
-
--Step 7: Setup Remote Desktop Access:
-Configure Remote Desktop settings on Client-1.
-Allow domain users access to Remote Desktop.
-
--Step 8: Create Additional Users:
-Use PowerShell on DC-1 to create multiple user accounts.
-Observe the newly created accounts in Active Directory.
-Test logging in with one of the newly created accounts on Client-1.
 
 <h2>Deployment and Configuration Steps</h2>
 
