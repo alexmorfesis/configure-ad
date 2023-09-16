@@ -69,6 +69,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img src="https://i.imgur.com/JmWVcud.png" height="80%" width="80%" alt="Successful Ping"/>
 </p>
+<br />
 
 <h3>Step 3: Install Active Directory</h3>
   <ol>
@@ -76,7 +77,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
     <li>After completing the installation, proceed to promote DC-1 to a domain controller. Look for the caution triangle symbol with an exclamation point ('!'). (See image below for details.) Click on it to initiate the promotion process. Select the option to add a new forest and specify the forest name as 'mydomain.com.' Additionally, configure DNS options and any other necessary settings.</li>
     <li>DC-1 will automatically restart upon completion. After the restart, log in using a domain user account (e.g., mydomain.com\labuser).</li>
   </ol>
-<br />
 
 <p>
 <img src="https://i.imgur.com/2NNvE4n.png" height="80%" width="80%" alt="promote dc-1 to controller"/>
