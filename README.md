@@ -75,10 +75,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
     <li>Open Server Manager. Add the "Active Directory Domain Services" role. (See image below for details.) Click through to proceed with the installation.</li>
     <li>After completing the installation, proceed to promote DC-1 to a domain controller. Look for the caution triangle symbol with an exclamation point ('!'). Click on it to initiate the promotion process. Select the option to add a new forest and specify the forest name as 'mydomain.com.' Additionally, configure DNS options and any other necessary settings.</li>
     <li>DC-1 will automatically restart upon completion. After the restart, log in using a domain user account (e.g., mydomain.com\labuser).</li>
-    <li></li>
-    <li></li>
   </ol>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/mQnagbQ.png" height="80%" width="80%" alt="active directory installation"/>
+</p>
+<p>
+<img src="https://i.imgur.com/dMIuL2z.png" height="80%" width="80%" alt="promote dc-1 to controller"/>
+</p>
