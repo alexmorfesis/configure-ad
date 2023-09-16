@@ -45,7 +45,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <ol>
     <li>Deploy a Domain Controller VM (Windows Server 2022) named “DC-1”. Take note of the Resource Group and Virtual Network (Vnet) that get created at this time. We will use them when we create our Client VM later.
 </li>
-    <li>To configure DC-1's NIC (Network Interface Card) with a static private IP address, access the Network Interface settings for DC-1. Within the Network Interface settings, locate the IP Configurations section, specifically focusing on "ipconfig1." In this context, you will have the ability to precisely define and set the Private IP address as static. (See pic for details.) </li>
+    <li>To configure DC-1's NIC (Network Interface Card) with a static private IP address, access the Network Interface settings for DC-1. Within the Network Interface settings, locate the IP Configurations section, specifically focusing on "ipconfig1." In this context, you will have the ability to precisely define and set the Private IP address as static. (See image below for details.) </li>
     <li>Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.</li>
     <li>Ensure that both VMs are in the same Vnet.</li>
   </ol>
@@ -87,8 +87,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Step 4: Create User Accounts</h3>
 <ol>
-  <li>Via Remote Desktop on DC-1, open Active Directory Users and Computers (ADUC) to create an Organizational Unit (OU) named "_EMPLOYEES." This OU will be used to organize user accounts.</li>
-  <li>Inside the "_ADMINS" OU, create a user account for "Jane Doe" with the username "jane_admin." Additionally, grant "jane_admin" membership in the "Domain Admins" Security Group. (Right click to add user to Groups.) This membership provides administrative privileges within the Active Directory domain.</li>
+  <li>Via Remote Desktop on DC-1, open Active Directory Users and Computers (ADUC) to create an Organizational Unit (OU) named "_EMPLOYEES." (See image below for details.) This OU will be used to organize user accounts.</li>
+  <li>Within the '_ADMINS' OU, create a user account named 'Jane Doe' with the username 'jane_admin.' (See image below for details.) After creating the user account, right-click on it to access the option for adding the user to groups. In this step, grant 'jane_admin' membership in the 'Domain Admins' Security Group. This membership will confer administrative privileges within the Active Directory domain, allowing 'jane_admin' to perform domain-wide administrative tasks.</li>
   <li>To perform administrative tasks, log in as "mydomain.com\jane_admin." This login can be used on both the DC-1 and Client-1 Virtual Machines, granting administrative access to manage the Active Directory environment and perform other administrative duties.</li>
 </ol>
 </br>
