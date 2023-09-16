@@ -69,7 +69,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img src="https://i.imgur.com/JmWVcud.png" height="80%" width="80%" alt="Successful Ping"/>
 </p>
-<br />
 
 <h3>Step 3: Install Active Directory</h3>
   <ol>
@@ -78,6 +77,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
     <li>DC-1 will automatically restart upon completion. After the restart, log in using a domain user account (e.g., mydomain.com\labuser).</li>
   </ol>
 
+<br />
 <p>
 <img src="https://i.imgur.com/2NNvE4n.png" height="80%" width="80%" alt="promote dc-1 to controller"/>
 </p>
@@ -85,3 +85,46 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/mQnagbQ.png" height="80%" width="80%" alt="active directory installation"/>
 </p>
 
+<h3>Step 4: Create User Accounts</h3>
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+</br>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Step 5: Join Client-1 to the Domain</h3>
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+</br>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Step 6: Setup Remote Desktop Access</h3>
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+</br>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Step 7: Create Additional Users</h3>
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+</br>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
