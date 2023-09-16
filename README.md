@@ -24,18 +24,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-Deploying an on-premises Active Directory within Azure Compute can be a complex process, but I'll break it down into simplified steps to give you a high-level overview. Keep in mind that specific details and configurations can vary depending on your organization's requirements. Here are the steps:
+<p>Deploying an on-premises Active Directory within Azure Compute can be a complex process, but I'll break it down into simplified steps to give you a high-level overview. Keep in mind that specific details and configurations can vary depending on your organization's requirements. Here are the steps:</p>
 
-- Step 1: Azure Resources Setup:
-Set up Azure resources, including a Virtual Network (VNet).
-
-- Step 2: Create Virtual Machines:
-Create a Windows Server 2022 VM named "DC-1" for the domain controller.
-Create a Windows 10 VM named "Client-1."
-
--Step 3: Ensure Connectivity:
-Verify that DC-1 and Client-1 are in the same VNet.
-Establish network connectivity between them.
+<ul>
+  <li>Step 1: Azure Resources Setup: Set up Azure resources, including a Virtual Network (VNet).</li>
+  <li>Step 2: Create Virtual Machines: Create a Windows Server 2022 VM named "DC-1" for the domain controller. Create a Windows 10 VM named "Client-1".</li>
+  <li>Step 3: Ensure Connectivity: Verify that DC-1 and Client-1 are in the same VNet. Establish network connectivity between them.</li>
+</ul> 
 
 -Step 4: Install Active Directory:
 Install Active Directory Domain Services on DC-1.
@@ -63,7 +58,12 @@ Test logging in with one of the newly created accounts on Client-1.
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Setup Resources in Azure
+Create the Domain Controller VM (Windows Server 2022) named “DC-1”
+Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
+Set Domain Controller’s NIC Private IP address to be static
+Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a
+Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 </p>
 <br />
 
