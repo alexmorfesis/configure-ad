@@ -64,7 +64,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-<img src="https://imgur.com/hTS1hEg" height="80%" width="80%" alt="Enable ICMPv4 Echo Request"/>
+<img src="https://i.imgur.com/hTS1hEg.png" height="80%" width="80%" alt="Enable ICMPv4 Echo Request"/>
 </p>
 <p>
 <img src="https://i.imgur.com/JmWVcud.png" height="80%" width="80%" alt="Successful Ping"/>
