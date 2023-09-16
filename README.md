@@ -79,8 +79,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-<img src="https://i.imgur.com/mQnagbQ.png" height="80%" width="80%" alt="active directory installation"/>
+<img src="https://i.imgur.com/2NNvE4n.png" height="80%" width="80%" alt="promote dc-1 to controller"/>
 </p>
 <p>
-<img src="https://i.imgur.com/dMIuL2z.png" height="80%" width="80%" alt="promote dc-1 to controller"/>
+<img src="https://i.imgur.com/mQnagbQ.png" height="80%" width="80%" alt="active directory installation"/>
 </p>
+
