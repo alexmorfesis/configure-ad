@@ -87,9 +87,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Step 4: Create User Accounts</h3>
 <ol>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Via the Remote Desktop on DC-1, use Active Directory Users and Computers (ADUC) to create an OU called "_EMPLOYEES."</li>
+  <li>Create an OU named "_ADMINS" and add "Jane Doe" as "jane_admin" with membership in the "Domain Admins" Security Group.</li>
+  <li>Log in as "mydomain.com\jane_admin" for administrative tasks. This login can be used on DC-1 and client-1 Virtual Machines.</li>
 </ol>
 </br>
 <p>
