@@ -89,7 +89,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Step 4: Create User Accounts</h3>
 <ol>
   <li>Via Remote Desktop on DC-1, open Active Directory Users and Computers (ADUC) to create two Organizational Units (OU) named "_EMPLOYEES" and "_ADMINS". (See image below for details.) These OUs will be used to organize user accounts.</li>
-  <li>Within the '_ADMINS' OU, create a user account named 'Jane Doe' with the username 'jane_admin.' (See image below for details.) After creating the user account, right-click on it to access the option for adding the user to groups. In this step, grant 'jane_admin' membership in the 'Domain Admins' Security Group. This membership will confer administrative privileges within the Active Directory domain, allowing 'jane_admin' to perform domain-wide administrative tasks.</li>
+  <li>Within the '_ADMINS' OU, create a user account named 'Jane Doe' with the username 'jane_admin.' After creating the user account, right-click on it to access the option for adding the user to groups. In this step, grant 'jane_admin' membership in the 'Domain Admins' Security Group. This membership will confer administrative privileges within the Active Directory domain, allowing 'jane_admin' to perform domain-wide administrative tasks.</li>
   <li>To perform administrative tasks, log in as "mydomain.com\jane_admin." This login can be used on both the DC-1 and Client-1 Virtual Machines, granting administrative access to manage the Active Directory environment and perform other administrative duties.</li>
 </ol>
 </br>
@@ -97,19 +97,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img src="https://i.imgur.com/tb9DVMM.png" height="80%" width="80%" alt="create new organizational unit"/>
 </p>
-<p>
-<img src="https://i.imgur.com/DDifdmi.png" height="80%" width="80%" alt="create new user"/>
-</p>
 
 <h3>Step 5: Join Client-1 to the Domain</h3>
 <ol>
-  <li></li>
-  <li></li>
+  <li>We will need to configure the DNS Server from the Azure Portal. Access the network settings, and in the DNS settings, specify the DNS server address as the private IP address of DC-1. This ensures that Client-1 can locate and communicate with the domain controller for domain join. (See image below for details.) Restart Client-1 to flush the DNS settings.</li>
+  <li>To initiate domain join, open the System Properties on Client-1. You can do this by right-clicking on "This PC" or "My Computer," selecting "Properties," and then clicking "Advanced system settings." In the System Properties window, go to the "Computer Name" tab. Click the "Change" button. Choose the option to "Join a domain or workgroup." Enter the domain name you configured earlier (e.g., "mydomain.com"). (See image below for details.) When prompted, provide administrative credentials with privileges to join a computer to the domain. You can use "jane_admin" or another account with similar privileges.</li>
   <li></li>
 </ol>
 </br>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TiW87Ly.png" height="80%" width="80%" alt="Set DNS to Custom"/>
+</p>
+<p>
+<img src="https://i.imgur.com/RkDvbe6.png" height="80%" width="80%" alt="Join Domain"/>
 </p>
 
 <h3>Step 6: Setup Remote Desktop Access</h3>
