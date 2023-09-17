@@ -47,26 +47,31 @@ This tutorial outlines the implementation of on-premises Active Directory within
     <li>Deploy a Domain Controller VM (Windows Server 2022) named “DC-1”. Take note of the Resource Group and Virtual Network (Vnet) that get created at this time. We will use them when we create our Client VM later.
 </li>
     <li>To configure DC-1's NIC (Network Interface Card) with a static private IP address, access the Network Interface settings for DC-1. Within the Network Interface settings, locate the IP Configurations section, specifically focusing on "ipconfig1." In this context, you will have the ability to precisely define and set the Private IP address as static. (See image below for details.) </li>
+  </br>
+    <p>
+<img src="https://i.imgur.com/dMIuL2z.png" height="80%" width="80%" alt="Static IP Address"/>
+</p>
+  </br>
     <li>Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.</li>
     <li>Ensure that both VMs are in the same Vnet.</li>
   </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/dMIuL2z.png" height="80%" width="80%" alt="Static IP Address"/>
-</p>
+
 
 <h3>Step 2: Ensure Connectivity</h3>
   <ol>
     <li>Access the Client-1 VM through a Remote Desktop connection.</li>
     <li>Verify network connectivity by initiating a ping operation from Client-1 to DC-1's private IP address. To achieve this, open a command-line interface, such as Command Prompt, and execute the command: `ping -t [private IP of DC-1]`. Initially, this command is expected to result in timeouts.</li>
-    <li>Enable ICMPv4 Echo Request within the Windows Firewall settings on DC-1. (See image below for details.) This action is essential to facilitate successful pinging between Client-1 and DC-1. Note the change in ping status.</li>
+    <br />
+    <p>
+<img src="https://i.imgur.com/hTS1hEg.png" height="80%" width="80%" alt="Enable ICMPv4 Echo Request"/>
+</p>
+    <li>Enable ICMPv4 Echo Request within the Windows Firewall settings on DC-1. This action is essential to facilitate successful pinging between Client-1 and DC-1. Note the change in ping status.</li>
   </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/hTS1hEg.png" height="80%" width="80%" alt="Enable ICMPv4 Echo Request"/>
-</p>
+
 <p>
 <img src="https://i.imgur.com/JmWVcud.png" height="80%" width="80%" alt="Successful Ping"/>
 </p>
