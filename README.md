@@ -46,7 +46,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <ol>
     <li>Deploy a Domain Controller VM (Windows Server 2022) named “DC-1”. Take note of the Resource Group and Virtual Network (Vnet) that get created at this time. We will use them when we create our Client VM later.
 </li>
-    <li>To configure DC-1's NIC (Network Interface Card) with a static private IP address, access the Network Interface settings for DC-1. Within the Network Interface settings, locate the IP Configurations section, specifically focusing on "ipconfig1." In this context, you will have the ability to precisely define and set the Private IP address as static. (See image below for details.) </li>
+    <li>To configure DC-1's NIC (Network Interface Card) with a static private IP address, access the Network Interface settings for DC-1. Within the Network Interface settings, locate the IP Configurations section, specifically focusing on "ipconfig1." In this context, you will have the ability to precisely define and set the Private IP address as static. </li>
   </br>
     <p>
 <img src="https://i.imgur.com/dMIuL2z.png" height="80%" width="80%" alt="Static IP Address"/>
@@ -55,9 +55,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
     <li>Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.</li>
     <li>Ensure that both VMs are in the same Vnet.</li>
   </ol>
-<br />
-
-
 
 <h3>Step 2: Ensure Connectivity</h3>
   <ol>
@@ -118,7 +115,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
   </p>
   <br />
 </ol>
-</br>
 
 <h3>Step 6: Setup Remote Desktop Access</h3>
 <ol>
