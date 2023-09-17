@@ -100,17 +100,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Step 5: Join Client-1 to the Domain</h3>
 <ol>
-  <li>We will need to configure the DNS Server from the Azure Portal. Access the network settings, and in the DNS settings, specify the DNS server address as the private IP address of DC-1. This ensures that Client-1 can locate and communicate with the domain controller for domain join. (See image below for details.) Restart Client-1 to flush the DNS settings.</li>
-  <li>To initiate domain join, open the System Properties on Client-1. You can do this by right-clicking on "This PC" or "My Computer," selecting "Properties," and then clicking "Advanced system settings." In the System Properties window, go to the "Computer Name" tab. Click the "Change" button. Choose the option to "Join a domain or workgroup." Enter the domain name you configured earlier (e.g., "mydomain.com"). (See image below for details.) When prompted, provide administrative credentials with privileges to join a computer to the domain. You can use "jane_admin" or another account with similar privileges.</li>
-  <li></li>
+  <li>Access the Azure Portal and navigate to Client-1's network settings. In the DNS configuration, specify DC-1's private IP address as the DNS server. This step ensures that Client-1 can successfully locate and communicate with the domain controller during the domain join process. After making this configuration, restart Client-1 to apply the DNS settings, including flushing the DNS cache.</li></li>
+  <p>
+    <img src="https://i.imgur.com/TiW87Ly.png" height="80%" width="80%" alt="Set DNS to Custom"/>
+  </p>
+  <li>Log in to Client-1 with administrative privileges. Open System Properties by right-clicking on "This PC" or "My Computer," selecting "Properties," and then clicking "Advanced system settings." In the System Properties window, navigate to the "Computer Name" tab and click the "Change" button. Choose the option to "Join a domain or workgroup" and enter the previously configured domain name (e.g., "mydomain.com"). When prompted, provide administrative credentials with the necessary privileges to join a computer to the domain. You can use the "jane_admin" account or another with similar privileges.</li>
+  <p>
+    <img src="https://i.imgur.com/RkDvbe6.png" height="80%" width="80%" alt="Join Domain"/>
+  </p>
 </ol>
 </br>
-<p>
-<img src="https://i.imgur.com/TiW87Ly.png" height="80%" width="80%" alt="Set DNS to Custom"/>
-</p>
-<p>
-<img src="https://i.imgur.com/RkDvbe6.png" height="80%" width="80%" alt="Join Domain"/>
-</p>
+
+
 
 <h3>Step 6: Setup Remote Desktop Access</h3>
 <ol>
