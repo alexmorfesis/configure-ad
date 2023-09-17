@@ -115,18 +115,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </ol>
 </br>
 
-
-
 <h3>Step 6: Setup Remote Desktop Access</h3>
 <ol>
-  <li></li>
-  <li></li>
-  <li></li>
-</ol>
-</br>
+  <li>To Setup Remote Desktop for non-administrative users on Client-1, log into Client-1 as mydomain.com\jane_admin and open system properties.</li>
+  <li>Click “Remote Desktop.” Allow “domain users” access to remote desktop.</li>
+  </br>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/347Gv6k.png" height="80%" width="80%" alt="User Remote Desktop Access"/>
 </p>
+</br>
+  <li>You can now log into Client-1 as a normal, non-administrative user.</li>
+</ol>
+
 
 <h3>Step 7: Create Additional Users</h3>
 <ol>
