@@ -63,17 +63,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <ol>
     <li>Access the Client-1 VM through a Remote Desktop connection.</li>
     <li>Verify network connectivity by initiating a ping operation from Client-1 to DC-1's private IP address. To achieve this, open a command-line interface, such as Command Prompt, and execute the command: `ping -t [private IP of DC-1]`. Initially, this command is expected to result in timeouts.</li>
-    <br />
-    <p>
-<img src="https://i.imgur.com/hTS1hEg.png" height="80%" width="80%" alt="Enable ICMPv4 Echo Request"/>
-</p>
-    <li>Enable ICMPv4 Echo Request within the Windows Firewall settings on DC-1. This action is essential to facilitate successful pinging between Client-1 and DC-1. Note the change in ping status.</li>
-  </ol>
-<br />
-
-
+   <br />
 <p>
 <img src="https://i.imgur.com/JmWVcud.png" height="80%" width="80%" alt="Successful Ping"/>
+</p>
+
+    <li>Enable ICMPv4 Echo Request within the Windows Firewall settings on DC-1. This action is essential to facilitate successful pinging between Client-1 and DC-1. Note the change in ping status.</li>
+  </ol>
+
+<br />
+    <p>
+<img src="https://i.imgur.com/hTS1hEg.png" height="80%" width="80%" alt="Enable ICMPv4 Echo Request"/>
 </p>
 
 <h3>Step 3: Install Active Directory</h3>
