@@ -87,17 +87,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/mQnagbQ.png" height="80%" width="80%" alt="active directory installation"/>
 </p>
 
+
 <h3>Step 4: Create User Accounts</h3>
 <ol>
   <li>Via Remote Desktop on DC-1, open Active Directory Users and Computers (ADUC) to create two Organizational Units (OU) named "_EMPLOYEES" and "_ADMINS". (See image below for details.) These OUs will be used to organize user accounts.</li>
   <li>Within the '_ADMINS' OU, create a user account named 'Jane Doe' with the username 'jane_admin.' After creating the user account, right-click on it to access the option for adding the user to groups. In this step, grant 'jane_admin' membership in the 'Domain Admins' Security Group. This membership will confer administrative privileges within the Active Directory domain, allowing 'jane_admin' to perform domain-wide administrative tasks.</li>
-  <li>To perform administrative tasks, log in as "mydomain.com\jane_admin." This login can be used on both the DC-1 and Client-1 Virtual Machines, granting administrative access to manage the Active Directory environment and perform other administrative duties.</li>
-</ol>
-</br>
+  </br>
 
 <p>
 <img src="https://i.imgur.com/tb9DVMM.png" height="80%" width="80%" alt="create new organizational unit"/>
 </p>
+  <li>To perform administrative tasks, log in as "mydomain.com\jane_admin." This login can be used on both the DC-1 and Client-1 Virtual Machines, granting administrative access to manage the Active Directory environment and perform other administrative duties.</li>
+</ol>
+
 
 <h3>Step 5: Join Client-1 to the Domain</h3>
 <ol>
