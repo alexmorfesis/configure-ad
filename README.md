@@ -141,3 +141,7 @@ attempt to log into Client-1 with one of the accounts (take note of the password
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<h2>In Conclusion: On-Premises Active Directory Is Your Path to Seamless Connectivity</h2>
+
+<p>Now that you've successfully completed this tutorial, you've empowered any user to access their account from virtually anywhere within the network. Whether it's the comfort of home, a bustling office, remote workstations, or the dynamic atmosphere of a university campus, the flexibility of your Active Directory deployment in the cloud (Azure) ensures seamless access to resources and a secure login experience. Embrace the possibilities and enjoy the convenience of a well-connected digital ecosystem!</p>
