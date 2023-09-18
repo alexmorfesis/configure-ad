@@ -134,12 +134,25 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <ol>
   <li>Login to DC-1 as jane_admin. Open PowerShell_ise as an administrator.</li>
   <li>Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1). Run the script and observe the accounts being created</li>
+</bk>
+  <p>
+<img src="https://i.imgur.com/X70TU6f.png" height="80%" width="80%" alt="Powershell ISE"/>
+</p>
   <li>When finished, open ADUC and observe the accounts in the appropriate OU
-attempt to log into Client-1 with one of the accounts (take note of the password in the script)</li>
+attempt to log into Client-1 with one of the accounts (take note of the password in the script).</li>
+   </br>
+<p>
+<img src="https://i.imgur.com/M4ppnbm.png" height="80%" width="80%" alt="Active Directory Users"/>
+</p>
+<li>You can now into Client-1 with any of the user accounts created!</li>
+  </br>
+<p>
+<img src="https://i.imgur.com/ExpPUeJ.png" height="80%" width="80%" alt="Login Active Directory"/>
+</p>
 </ol>
 </br>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/X70TU6f.png" height="80%" width="80%" alt="Powershell ISE"/>
 </p>
 
 <h2>In Conclusion: On-Premises Active Directory Is Your Path to Seamless Connectivity</h2>
