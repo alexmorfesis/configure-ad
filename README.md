@@ -150,10 +150,6 @@ attempt to log into Client-1 with one of the accounts (take note of the password
 <img src="https://i.imgur.com/ExpPUeJ.png" height="80%" width="80%" alt="Login Active Directory"/>
 </p>
 </ol>
-</br>
-<p>
-<img src="https://i.imgur.com/X70TU6f.png" height="80%" width="80%" alt="Powershell ISE"/>
-</p>
 
 <h2>In Conclusion: On-Premises Active Directory Is Your Path to Seamless Connectivity</h2>
 
