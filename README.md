@@ -36,7 +36,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-<h3>Step1: Setup Resources in Azure</h3>
+<h3>Step 1: Setup Resources in Azure</h3>
   <ol>
     <li>Deploy a Domain Controller VM (Windows Server 2022) named “DC-1”. Take note of the Resource Group and Virtual Network (Vnet) that get created at this time. We will use them when we create our Client VM later.
 </li>
@@ -70,7 +70,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <ol>
     <li>Open Server Manager. Add the "Active Directory Domain Services" role. (See image below for details.) Click through to proceed with the installation.</li>
     <li>After completing the installation, proceed to promote DC-1 to a domain controller. Look for the caution triangle symbol with an exclamation point ('!'). (See image below for details.) Click on it to initiate the promotion process. Select the option to add a new forest and specify the forest name as 'mydomain.com.' Additionally, configure DNS options and any other necessary settings.</li>
-    <li>DC-1 will automatically restart upon completion. After the restart, log in using a domain user account (e.g., mydomain.com\labuser).</li>
+    <li>DC-1 will automatically restart upon completion of the promotion process. After the restart, log in using a domain user account (e.g., mydomain.com\labuser).</li>
   </ol>
 
 <br />
@@ -97,7 +97,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Step 5: Join Client-1 to the Domain</h3>
 <ol>
-  <li>Access the Azure Portal and navigate to Client-1's network settings. In the DNS configuration, specify DC-1's private IP address as the DNS server. This step ensures that Client-1 can successfully locate and communicate with the domain controller during the domain join process. After making this configuration, restart Client-1 to apply the DNS settings, including flushing the DNS cache.</li></li>
+  <li>Access the Azure Portal and navigate to Client-1's network settings. In the DNS configuration, specify DC-1's private IP address as the DNS server. This step ensures that Client-1 can successfully locate and communicate with the domain controller during the domain join process. After making this configuration, restart Client-1 to apply the DNS settings, including flushing the DNS cache.</li>
   <br />
   <p>
     <img src="https://i.imgur.com/TiW87Ly.png" height="80%" width="80%" alt="Set DNS to Custom"/>
@@ -141,7 +141,7 @@ attempt to log into Client-1 with one of the accounts (take note of the password
 <p>
 <img src="https://i.imgur.com/M4ppnbm.png" height="80%" width="80%" alt="Active Directory Users"/>
 </p>
-<li>You can now into Client-1 with any of the user accounts created!</li>
+<li>You can now log into Client-1 with any of the user accounts created!</li>
   </br>
 <p>
 <img src="https://i.imgur.com/ExpPUeJ.png" height="80%" width="80%" alt="Login Active Directory"/>
