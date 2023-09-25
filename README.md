@@ -131,8 +131,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <li>Login to DC-1 as `jane_admin`. Open PowerShell_ise as an administrator.</li>
   <li>Create a new file and paste the contents of the script into it. You can find the script [here](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1).</li>
   <br />
-  
-    <img src="https://i.imgur.com/X70TU6f.png" height="80%" width="80%" alt="Powershell ISE"/>
+  <p>
+  <img src="https://i.imgur.com/X70TU6f.png" height="80%" width="80%" alt="Powershell ISE"/>
   </p>
   
   <li>Run the script and observe the accounts being created.</li>
