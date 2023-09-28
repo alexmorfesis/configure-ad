@@ -38,7 +38,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Step 1: Setup Resources in Azure</h3>
   <ol>
-    <li>Deploy a Domain Controller VM (Windows Server 2022) named “DC-1”. Take note of the Resource Group and Virtual Network (Vnet) that get created at this time. We will use them when we create our Client VM later.
+    <li>Deploy a Domain Controller VM (Windows Server 2022) named “DC-1”. Take note of the Resource Group and Virtual Network (Vnet) created during this step. We will use them when we create our Client VM later.
 </li>
     <li>To configure DC-1's NIC (Network Interface Card) with a static private IP address, access the Network Interface settings for DC-1. Within the Network Interface settings, locate the IP Configurations section, specifically focusing on "ipconfig1." In this context, you will have the ability to precisely define and set the Private IP address as static. </li>
   </br>
